@@ -7,7 +7,7 @@ defmodule Deadend.Application do
 
   def start(_type, _args) do
     children = [
-      {Plug.Cowboy, scheme: :http, plug: Deadend.Plug, options: [port: 8080]}
+      {Plug.Cowboy, scheme: :http, plug: Deadend.Plug, options: [port: 5000]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
